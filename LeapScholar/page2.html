@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeapScholar - Events </title>
+  <style>
+
+    body{
+      margin: 0px;
+    }
+    *{
+      font-family: PaulGrotesk,sans-serif;
+    }
+    #container{
+      height: auto;
+      width: 100%;
+      /* border: 1px solid black; */
+    }
+  #box1{
+    height:500px;
+    width: 85%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    margin-top: 60px;
+  }
+  #box1>div{
+
+    height: 100%;
+    margin: auto;
+    /* border: 1px solid blue; */
+  }
+  #box1>div:nth-child(1)
+  {
+    width: 35%;
+    
+  }
+  #box1>div:nth-child(2){
+  
+    width: 60%;
+  }
+
+  img{
+    width: 100%;
+  }
+  .box1_info{
+    height: 150px;
+    width: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+  .box1_info>div{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid green; */
+    margin: auto;
+    /* text-align: center; */
+  }
+  .box1_info>div>img{
+    width: 50px;
+    height: 80px;
+    
+
+  }
+  .tab{
+    height: 40px;
+    width: 60%;
+    border: 1px solid blue;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    background-color: #453dff;
+    /* padding: 0px 5px; */
+    border-radius: 5px;
+  }
+  .tab>h3{
+    margin:10px 15px;
+  }
+  #box1>div>h1{
+    font-size: 40px;
+    margin-top: 0px;
+    line-height: 55px;
+  }
+
+  /* box2 */
+  #box2{
+    width: 85%;
+    height: 180px;
+    /* border:1px solid black; */
+    margin: auto;
+    display: flex;
+    background-color:  #5e36ff;
+    border-radius: 10px;
+  }
+  #box2>div{
+    height: 130px;
+    width: 22%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+  }
+  #box2>div:hover{
+    background-color:#9994ff ;
+  }
+  #box2>div>h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  #box2>div>p{
+    margin-top: 0px;
+    font-size: 25px;
+  }
+
+  /* box3 */
+  #box3{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 60px;
+    background-color: #f2f4ff;
+    padding-top: 20px;
+  }
+  #box3>div{
+    width: 85%;
+  margin: auto;
+  /* border: 1px solid blue; */
+  
+  }
+  #box3>div:nth-child(1){
+    height: 100px;
+    text-align: center;
+    
+  }
+  #box3>div:nth-child(2){
+    height: 410px;
+    display: flex;
+   
+  }
+
+  #event-boxes>div{
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: white;
+    
+
+  }
+
+  #event-boxes>div>img{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  button{
+    padding: 12px 105px;
+    font-size: 15px;
+    background-color:#453dff;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+
+   
+  }
+  .details{
+    padding: 10px;
+  }
+
+  /* nav */
+  #nav{
+      /* border: 1px solid red; */
+      height: 70px;
+      width: 100%;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      z-index: 1;
+  }
+  #navbox>div{
+    /* border:1px solid black; */
+    height: 100%;
+
+  }
+  #navbox{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid black; */
+  }
+
+  #navbox>div:nth-child(1)
+  {
+    width: 15%;
+    margin-left: 70px;
+    
+    
+  }
+  #navbox>div:nth-child(2)
+  {
+    width: 10%;
+    margin: auto;
+   
+  }
+  #navbox>div:nth-child(3)
+  {
+    width: 55%;
+    margin-left:50px;
+   
+  }
+  #logo>img{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  #Menubar{
+    display: flex;
+    margin: auto;
+  }
+  #Menubar>div{
+    margin: auto;
+  }
+  h3{
+    font-size: 16px;
+  }
+  #Country>h4{
+    border: 1px solid #453dff;
+    background-color: white;
+    color: #453dff;
+    
+    height: auto;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  border-radius: 10px;
+  height:35px;
+  text-align: center;
+  width: auto;
+  padding: 5px 15px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+  }
+  .signup{
+    /* border: 1px solid black; */
+    background-color: #453dff;
+    color: white;
+    
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  height: 35px;
+  justify-content: center;
+  
+    
+  }
+  .signup>h3{
+    margin: 10px 10px;
+  }
+
+  .signin{
+    border: 1px solid #453dff;
+    background-color: white;
+    color: #453dff;
+    
+    height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  height:35px;
+    
+  }
+  .signin>h3{
+    margin: 10px 10px;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="nav">
+      <div id="navbox">
+        <div id="logo">
+          <img src="https://leapscholar.com/assets/company_logo/new-header-logo.svg">
+        </div>
+        <div id="Country">
+          <h4>Select Country </h4>
+        </div>
+        <div id="Menubar">
+          <div>
+            <a href="file:///Users/rishabhpanesar/Desktop/Sagarika_HTML/Practice_Websites/LeapScholar/page1.html"><h3 style="color: black;" >About</h3></a>
+            </div>
+          <div>
+            <h3>Our Experts</h3>
+          </div>
+          <div>
+            <h3>IELTS</h3>
+          </div>
+          <div>
+            <h3 style="color: #453dff;">Events</h3></div>
+          <div>
+            <h3>Scholarship</h3>
+            </div>
+          <div class="signup">
+            <h3>Sign Up</h3>
+            </div>
+          <div class="signin">
+            <h3>Sign In</h3>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="box1">
+      <div>
+        <h1>Live events for study abroad aspirants.</h1>
+        <h3>Hear from expert speakers</h3>
+        <div class="box1_info">
+          <div>
+            <img src="https://leapscholar.com/assets/icons/LSRevamp/live_event.svg">
+            <p>Hear from top experts & speakers</p>
+          </div>
+          <div>
+            <img src="https://leapscholar.com/assets/icons/LSRevamp/gift_card.svg">
+            <p>Exclusive goodies for attendees</p>
+          </div>
+          <div>
+            <img src="https://leapscholar.com/assets/icons/LSRevamp/free.svg">
+            <p>Access knowledge for free</p>
+          </div>
+        </div>
+        <div class="tab">
+          <h3>View Upcoming Events</h3>
+        </div>
+      </div>
+      <div>
+        <img src="https://leapscholar.com/_next/image?url=https%3A%2F%2Fleapassets.s3.ap-south-1.amazonaws.com%2F29_Mar_Low_budget_details_page_f4bf4e2dbe.jpeg&w=1920&q=75">
+      </div>
+    </div>
+    <div id="box2">
+      <div>
+        <h1>3,00,000+</h1>
+        <p>Attendees</p>
+
+      </div>
+      <div>
+        <h1>500+</h1>
+        <p>Events Organized</p>
+        
+      </div>
+      <div>
+        <h1>4.8/5</h1>
+        <p>Rating By Students</p>
+        
+      </div>
+      <div>
+        <h1>#1</h1>
+        <p>Study Abroad Events</p>
+      </div>
+
+    </div>
+    <div id="box3">
+      <div>
+        <h1>View Upcoming Events</h1>
+      </div>
+      <div id="event-boxes">
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=https%3A%2F%2Fleapassets.s3.ap-south-1.amazonaws.com%2F29_Mar_low_budget_landing_page_1cbdc69b7b.jpeg&w=750&q=75">
+          <div class="details">
+            <p>25 Sep | 6:00pm - 7:00pm</p>
+            <p><b>548+</b> Registers</p>
+            <button><b>Book a free Seat</b></button>
+          </div>
+        </div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=https%3A%2F%2Fleapassets.s3.ap-south-1.amazonaws.com%2F27_Feb_MS_in_CS_CL_landing_page_157791dfb5.jpeg&w=750&q=75">
+          <div class="details">
+            <p>27 Sep | 6:00pm - 7:00pm</p>
+            <p><b>680+</b> Registers</p>
+            <button><b>Book a free Seat</b></button>
+          </div>
+        </div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=https%3A%2F%2Fleapassets.s3.ap-south-1.amazonaws.com%2FGloball_920401f6e7.jpeg&w=750&q=75">
+          <div class="details">
+            <p>28 Sep | 6:00pm - 7:00pm</p>
+            <p><b>348+</b> Registers</p>
+            <button><b>Book a free Seat</b></button>
+          </div>
+        </div>
+        
+        
+      </div>
+    </div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+  </div>
+  
+</body>
+</html>
