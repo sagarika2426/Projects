@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeapScholar - Home
+  </title>
+  <style>
+    *{
+      font-family: PaulGrotesk,sans-serif;
+    }
+    body{
+      margin: 0px;
+    }
+    #container{
+      /* border: 1px solid black; */
+      height: 2000px;
+      width: 100%;
+    }
+
+    #nav{
+      /* border: 1px solid red; */
+      height: 70px;
+      width: 100%;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      z-index: 1;
+    }
+    #founder {
+      height: 400px;
+      width: 85%;
+      /* border: 1px solid green; */
+      display: flex;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    #founder>div{
+      height: 100%;
+      width: 25%;
+      /* border: 1px solid black; */
+      margin: auto;
+      border-radius: 10px;
+    }
+    #founder>div:nth-child(1)
+    {
+      width: 38%;
+    }
+
+    img{
+      height: 100%;
+      width: auto;
+    
+
+    }
+
+    div>p{
+      line-height: 25px;
+      font-size: 18px;
+    }
+    .image{
+      position: relative;
+    }
+
+    .image>.info{
+      /* border: 1px solid red; */
+      height: 140px;
+     
+      position: absolute;
+      top: 248px;
+      padding: 5px;
+      width: auto;
+      
+      color: white;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      background-color: rgba(0, 0, 0, 0.25);
+      
+    }
+    h1{
+      font-size: 40px;
+    }
+
+    .second-box{
+    height: 450px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 70px;
+    
+  }
+
+  .second-box>div>h1{
+    text-align: center;
+  }
+
+  #mentor-mainbox{
+    height: 370px;
+    width: 85%;
+    /* border: 1px solid red; */
+    display: flex;
+    margin: auto;
+    
+  } 
+
+  #mentor-mainbox>div{
+    height: 100%;
+    width: 22%;
+    /* border: 1px solid blue; */
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 10px;
+    position: relative;
+    
+  }
+
+  #mentor-mainbox>div>img{
+    height: 370px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #adv-info{
+    position: absolute;
+    bottom: 5px;
+    color: white;
+    /* text-align: center; */
+    /* border: 1px solid black; */
+    width: 80%;
+    padding-left: 10PX;
+  }
+
+  #adv-info>h2{
+    /* background-color: rgb(94, 94, 94); */
+    width: 150px;
+    font-size: 21px;
+  }
+  #adv-info>p{
+    background-color: rgb(39, 40, 40);
+    /* width: 250px; */
+  }
+
+  /* nav-bar */
+
+
+  #nav{
+      /* border: 1px solid red; */
+      height: 70px;
+      width: 100%;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      z-index: 1;
+  }
+  #navbox>div{
+    /* border:1px solid black; */
+    height: 100%;
+
+  }
+  #navbox{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid black; */
+  }
+
+  #navbox>div:nth-child(1)
+  {
+    width: 15%;
+    margin-left: 70px;
+    
+    
+  }
+  #navbox>div:nth-child(2)
+  {
+    width: 10%;
+    margin: auto;
+   
+  }
+  #navbox>div:nth-child(3)
+  {
+    width: 55%;
+    margin-left:50px;
+   
+  }
+  #logo>img{
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+  }
+
+  #Menubar{
+    display: flex;
+    margin: auto;
+  }
+  #Menubar>div{
+    margin: auto;
+  }
+  h3{
+    font-size: 16px;
+  }
+  #Country>h4{
+    border: 1px solid #453dff;
+    background-color: white;
+    color: #453dff;
+    
+    height: auto;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+  border-radius: 10px;
+  height:35px;
+  text-align: center;
+  width: auto;
+  padding: 5px 15px;
+  margin-top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+  }
+  .signup{
+    /* border: 1px solid black; */
+    background-color: #453dff;
+    color: white;
+    
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  height: 35px;
+  justify-content: center;
+  
+    
+  }
+  .signup>h3{
+    margin: 10px 10px;
+  }
+
+  .signin{
+    border: 1px solid #453dff;
+    background-color: white;
+    color: #453dff;
+    
+    height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  height:35px;
+    
+  }
+  .signin>h3{
+    margin: 10px 10px;
+  }
+  .info>p{
+    margin: 0px;
+  }
+  .third-box{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid black; */
+    margin-top: 80px;
+    background-color: rgb(255, 252, 243);
+    padding-top: 10px;
+  }
+
+  .third-box>div{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 68%;
+    width: 85%;
+    margin: auto;
+  }
+  .third-box>div>div{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid grey; */
+    margin: auto;
+  }
+  .third-box>div>div>img{
+   width: 100%;
+    height: 70%;
+  }
+
+  .third-box>h1{
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .fourth-class{
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-top: 50px;
+  }
+  .fourth-class>div>h1{
+    font-size: 33px;
+  }
+  .fourth-class>div{
+    width: 50%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .fourth-class>#content-box{
+    height: 70%;
+    width: 85%;
+    margin: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 20px;
+  }
+  #content-box>div{
+    width: 20%;
+    height: 80%;
+    /* border: 1px solid red; */
+    margin: auto;
+    padding: 10px;
+  }
+  #content-box>div>img{
+    height: 60px;
+    width: 60px;
+  }
+  .five-box{
+    width: 60%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(69, 61, 255);
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+ 
+  
+
+   
+
+
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div id="nav">
+      <div id="navbox">
+        <div id="logo">
+          <img src="https://leapscholar.com/assets/company_logo/new-header-logo.svg">
+        </div>
+        <div id="Country">
+          <h4>Select Country </h4>
+        </div>
+        <div id="Menubar">
+          <div>
+            <h3 style="color: #453dff;">About</h3>
+          </div>
+          <div>
+            <h3>Our Experts</h3>
+          </div>
+          <div>
+            <h3>IELTS</h3>
+          </div>
+          <div>
+            <a href="file:///Users/rishabhpanesar/Desktop/Sagarika_HTML/Practice_Websites/LeapScholar/page2.html"><h3 style="color: black;" >Events</h3></a>
+            </div>
+          <div>
+            <h3>Scholarship</h3>
+            </div>
+          <div class="signup">
+            <h3>Sign Up</h3>
+            </div>
+          <div class="signin">
+            <h3>Sign In</h3>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="main-box first-box">
+      
+      <div id="founder">
+        <div id="founder-info">
+          <h1>Meet Our Founders</h1>
+          <p>Leap Scholar is born out of founders' conviction in the talent and potential of Indian students to thrive in outstanding careers abroad. Only in the last decade we have seen so many Indian students raise the bar in academics, research and global corporations across the world. We truly believe that education not only the greatest equalizer but also the springboard for success and prosperity for everyone
+          </p>
+        </div>
+        <div class="image">
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Ffounder-1.png&w=640&q=75">
+          <div class="info">
+            <h2>Vaibhav Singh</h2>
+            <p> CFA</p>
+            <p>IIT Kharagpur, Columbia University New York</p>
+            
+          </div>
+        </div>
+        <div class="image">
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Ffounder-2.png&w=640&q=75">
+          <div class="info">
+            <h2>Arnav Kumar</h2>
+            <p> IIT Kharagpur
+            </p>
+            <p>Ex-Venture Capital investor at SAIF Partners</p>
+        </div>
+
+      </div>
+    </div>
+
+
+    </div>
+    <div class="main-box second-box">
+      <div>
+        <h1>Our Advisors</h1>
+      </div>
+      <div id="mentor-mainbox">
+    
+        <!-- 1st box -->
+        <div>
+          <img src="https://www.utimf.com/documents/media/image/AmitPremchandani.jpg">
+          <div id="adv-info">
+            <h2>Amit Premchandani</h2>
+            <p>Senior VP & Fund Manager - Equity</p>
+          </div>
+        </div>
+    
+        <!-- 2nd box -->
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Fadvisor-3.png&w=640&q=75">
+          <div id="adv-info">
+            <h2>Bhupinder Singh</h2>
+            <p>Founder & CEO, InCred</p>
+          </div>
+        </div>
+    
+        <!-- 3rd box -->
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fabout-us-page%2Fadvisor-2.png&w=640&q=75">
+          <div id="adv-info">
+            <h2>Balaji Srinivasan</h2>
+            <p>CIO, University of Chicago</p>
+          </div>
+        </div>
+    
+        <!-- 4th box -->
+        <div>
+          <img src="https://m.economictimes.com/thumb/msid-78717355,width-1500,height-2100,resizemode-4,/etmarkets-investors-guide-a-strategy-to-invest-rs-10-lakh-in-this-market.jpg">
+          <div id="adv-info">
+            <h2>Viraj Mehta</h2>
+            <p>Managing Director and Fund Manager, Equirus PMS</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third-box">
+      <h1>Trusted by Global Investors</h1>
+      <div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fglobal-investors-1.png&w=640&q=75">
+        </div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fglobal-investors-2.png&w=640&q=75"></div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fglobal-investors-3.png&w=640&q=75"></div>
+        <div>
+          <img src="https://leapscholar.com/_next/image?url=%2Fassets%2Fimages%2FLSRevamp%2Fglobal-investors-4.png&w=640&q=75"></div>
+      </div>
+    </div>
+    <div class="fourth-class">
+      <div>
+        <h1>Our Study Abroad Counsellors are your biggest cheerleaders</h1>
+      </div>
+      <div id="content-box">
+        <div>
+          <img src="https://leapscholar.com/assets/images/LSRevamp/knowledge.svg">
+          <h2>Comprehensive Knowledge Base</h2>
+          <p>Leap training modules ensure counsellors are up to date with latest development</p>
+        </div>
+        <div>
+          <img src="https://leapscholar.com/assets/images/LSRevamp/profile.svg">
+          <h2>Profile-based allocation</h2>
+          <p>Counsellors are allocated based on your profile to serve you better</p>
+        </div>
+        <div>
+          <img src="https://leapscholar.com/assets/images/LSRevamp/feedback.svg">
+          <h2>Live Feedback</h2>
+          <p>Regular feedback sessions to ensure your satisfaction at every stage</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="five-box">
+      <h2>5000+ students admitted with 97% success rate till now. <br/>
+        Take a leap towards your study abroad journey.</h2>
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
